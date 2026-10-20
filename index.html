@@ -1,0 +1,228 @@
+<!DOCTYPE html>
+<html lang="pt-PT">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Perfil - Hornet | Silksong RPG</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Cinzel+Decorative:wght@700&family=Cinzel:wght@400;600;700&family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+  <script src="https://cdn.tailwindcss.com"></script>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body class="flex flex-col min-h-screen text-slate-200 antialiased">
+
+  <!-- MENU SUPERIOR ESQUERDO (PÁGINAS AUXILIARES) -->
+  <header class="w-full bg-slate-950/90 border-b border-slate-800 backdrop-blur-md sticky top-0 z-50 px-4 py-2 flex justify-between items-center">
+    <div class="flex items-center space-x-3">
+      <div class="w-8 h-8 rounded-full bg-red-900/40 border border-red-500/50 flex items-center justify-center text-red-400 font-bold text-lg">
+        <i class="fa-solid fa-spider text-sm"></i>
+      </div>
+      <div>
+        <span class="font-bold text-slate-100 tracking-wider text-sm block leading-none" style="font-family: var(--font-header);">PHARLOOM REIGN</span>
+        <span class="text-[10px] text-red-400 tracking-widest uppercase">Ficha de Personagem</span>
+      </div>
+    </div>
+
+    <!-- Links do Canto Superior -->
+    <nav class="flex items-center space-x-2 text-xs md:text-sm">
+      <a href="sobre.html" class="px-3 py-1.5 rounded bg-slate-900 hover:bg-slate-800 border border-slate-700 text-slate-300 hover:text-white transition flex items-center space-x-1">
+        <i class="fa-solid fa-book-open text-xs text-red-400"></i>
+        <span>Sobre</span>
+      </a>
+      <a href="saibamais.html" class="px-3 py-1.5 rounded bg-slate-900 hover:bg-slate-800 border border-slate-700 text-slate-300 hover:text-white transition flex items-center space-x-1">
+        <i class="fa-solid fa-circle-info text-xs text-blue-400"></i>
+        <span>Saiba Mais</span>
+      </a>
+      <a href="contatos.html" class="px-3 py-1.5 rounded bg-slate-900 hover:bg-slate-800 border border-slate-700 text-slate-300 hover:text-white transition flex items-center space-x-1">
+        <i class="fa-solid fa-paper-plane text-xs text-emerald-400"></i>
+        <span>Contatos</span>
+      </a>
+    </nav>
+  </header>
+
+  <div class="container mx-auto px-4 pt-6 pb-2">
+    <div class="text-center mb-6">
+      <div class="inline-flex items-center space-x-2 text-xs tracking-widest text-red-400 uppercase mb-1">
+        <span>◆ PROTEGIDA DA SEDA</span>
+        <span>|</span>
+        <span>REINO DE PHARLOOM ◆</span>
+      </div>
+      <h1 class="text-4xl md:text-6xl font-extrabold tracking-widest text-white title-gothic mb-1">HORNET</h1>
+      <p class="text-slate-400 text-xs md:text-sm font-serif tracking-widest">FICHA DE PERSONAGEM DE RPG - PHARLOOM SYSTEM</p>
+    </div>
+
+    <!-- NAV PRINCIPAL DE ABAS DA FICHA -->
+    <div class="flex flex-wrap justify-center gap-2 mb-6">
+      <a href="index.html" class="nav-btn active"><i class="fa-solid fa-user-shield"></i><span>Perfil</span></a>
+      <a href="habilidades.html" class="nav-btn"><i class="fa-solid fa-bolt"></i><span>Habilidades</span></a>
+      <a href="pericias.html" class="nav-btn"><i class="fa-solid fa-bullseye"></i><span>Perícias</span></a>
+      <a href="conhecimentos.html" class="nav-btn"><i class="fa-solid fa-scroll"></i><span>Conhecimentos</span></a>
+      <a href="poderes.html" class="nav-btn"><i class="fa-solid fa-wand-magic-sparkles"></i><span>Poderes</span></a>
+      <a href="equipamentos.html" class="nav-btn"><i class="fa-solid fa-shield-halved"></i><span>Equipamentos</span></a>
+      <a href="map.html" class="nav-btn"><i class="fa-solid fa-map-location-dot"></i><span>Mapa</span><span></a>
+    </div>
+  </div>
+
+  <main class="container mx-auto px-4 pb-12 flex-grow">
+    <div class="grid grid-cols-1 lg:grid-cols-12 gap-6 items-start">
+      
+      <!-- Imagem e Lore da Hornet -->
+      <div class="lg:col-span-4 hk-frame flex flex-col items-center text-center">
+        <div class="hk-frame-header w-full">
+          <span>Hornet</span>
+          <i class="fa-solid fa-bookmark text-red-500"></i>
+        </div>
+        <div class="relative w-full aspect-[3/4] max-w-sm rounded bg-slate-900 border border-slate-800 flex items-center justify-center overflow-hidden">
+          <!-- Insira o caminho da sua imagem da Hornet na pasta img/ -->
+          <img src="img/hornet.jpg" onerror="this.onerror=null; this.src='https://placehold.co/400x550/0f172a/e2e8f0?text=Hornet';" alt="Retrato da Hornet" class="w-full h-full object-cover object-center">
+        </div>
+        <div class="mt-4 text-left text-xs text-slate-300 bg-slate-950/60 p-3 rounded border border-slate-800">
+          <h4 class="font-bold text-red-400 mb-1 flex items-center space-x-1">
+            <i class="fa-solid fa-feather-pointed"></i>
+            <span>Resumo da História</span>
+          </h4>
+          <p>Filha do Rei Pálido e Herrah, a Besta. Hornet é uma princesa-guardiã habilidosa e protetora das ruínas. Capturada e levada ao Reino de Pharloom, ela deve escalar a cidadela através do som e da seda para desvendar o mistério de sua maldição.</p>
+        </div>
+      </div>
+
+      <!-- Status Alteráveis e Identidade -->
+      <div class="lg:col-span-8 space-y-6">
+        <div class="hk-frame">
+          <div class="hk-frame-header">
+            <span>STATUS DA RECEPTÁCULO</span>
+            <span class="text-xs text-slate-400">Atributos Interativos</span>
+          </div>
+          <div class="grid grid-cols-1 md:grid-cols-3 gap-4 mb-6">
+            <div class="bg-slate-900/80 p-3 rounded border border-slate-800 flex items-center justify-between">
+              <div>
+                <div class="text-xs text-slate-400 uppercase">Sorte</div>
+                <div class="font-bold text-sm" id="val-sorte">8 / 10</div>
+              </div>
+              <div class="flex flex-col space-y-1">
+                <button onclick="adjustStat('sorte', 1)" class="w-5 h-5 bg-slate-800 text-xs text-white rounded">+</button>
+                <button onclick="adjustStat('sorte', -1)" class="w-5 h-5 bg-slate-800 text-xs text-white rounded">-</button>
+              </div>
+            </div>
+            <div class="bg-slate-900/80 p-3 rounded border border-slate-800 flex items-center justify-between">
+              <div>
+                <div class="text-xs text-slate-400 uppercase">Azar</div>
+                <div class="font-bold text-sm" id="val-azar">2 / 10</div>
+              </div>
+              <div class="flex flex-col space-y-1">
+                <button onclick="adjustStat('azar', 1)" class="w-5 h-5 bg-slate-800 text-xs text-white rounded">+</button>
+                <button onclick="adjustStat('azar', -1)" class="w-5 h-5 bg-slate-800 text-xs text-white rounded">-</button>
+              </div>
+            </div>
+            <div class="bg-slate-900/80 p-3 rounded border border-slate-800 flex items-center justify-between">
+              <div>
+                <div class="text-xs text-slate-400 uppercase">Divindade</div>
+                <div class="font-bold text-sm" id="val-divindade">8 / 10</div>
+              </div>
+              <div class="flex flex-col space-y-1">
+                <button onclick="adjustStat('divindade', 1)" class="w-5 h-5 bg-slate-800 text-xs text-white rounded">+</button>
+                <button onclick="adjustStat('divindade', -1)" class="w-5 h-5 bg-slate-800 text-xs text-white rounded">-</button>
+              </div>
+            </div>
+          </div>
+
+          <!-- HP Máscaras -->
+          <div class="bg-slate-950/80 p-4 rounded border border-slate-800 mb-4">
+            <div class="flex justify-between items-center mb-2">
+              <span class="text-xs font-bold text-slate-300 uppercase">HP (Máscaras de Vitalidade)</span>
+              <span class="text-xs font-mono font-bold text-red-400" id="hp-count">9 / 9</span>
+            </div>
+            <div class="flex flex-wrap items-center gap-2" id="hp-container"></div>
+          </div>
+
+          <!-- EN Seda -->
+          <div class="bg-slate-950/80 p-4 rounded border border-slate-800">
+            <div class="flex justify-between items-center mb-2">
+              <span class="text-xs font-bold text-slate-300 uppercase">EN (Energia de Seda)</span>
+              <span class="text-xs font-mono font-bold text-rose-400" id="silk-count">99 / 99</span>
+            </div>
+            <div class="flex flex-wrap items-center gap-2" id="silk-container"></div>
+          </div>
+        </div>
+
+        <!-- Tabela de Identidade -->
+        <div class="hk-frame">
+          <div class="hk-frame-header"><span>DADOS DE IDENTIDADE</span></div>
+          <div class="grid grid-cols-1 md:grid-cols-2 gap-x-6 gap-y-3 text-xs md:text-sm">
+            <div class="flex justify-between border-b border-slate-800/80 pb-1.5"><span class="text-slate-400">Nome:</span><span class="font-semibold text-white">Hornet</span></div>
+            <div class="flex justify-between border-b border-slate-800/80 pb-1.5"><span class="text-slate-400">Natureza:</span><span>Filha de Pale King e Herrah</span></div>
+            <div class="flex justify-between border-b border-slate-800/80 pb-1.5"><span class="text-slate-400">Comportamento:</span><span>Protetora, Letal, Ágil</span></div>
+            <div class="flex justify-between border-b border-slate-800/80 pb-1.5"><span class="text-slate-400">Raça/Classe:</span><span class="text-rose-300">Inseto / Tecelã</span></div>
+            <div class="flex justify-between border-b border-slate-800/80 pb-1.5"><span class="text-slate-400">Origem:</span><span>Hallownest / Pharloom</span></div>
+            <div class="flex justify-between border-b border-slate-800/80 pb-1.5"><span class="text-slate-400">Tendência:</span><span>Neutro / Leal</span></div>
+            <div class="flex justify-between border-b border-slate-800/80 pb-1.5"><span class="text-slate-400">Arma:</span><span class="text-amber-300">Agulha e Fio de Seda</span></div>
+            <div class="flex justify-between border-b border-slate-800/80 pb-1.5"><span class="text-slate-400">Idade:</span><span>Ancestral</span></div>
+            <div class="flex justify-between border-b border-slate-800/80 pb-1.5 items-center">
+              <span class="text-slate-400">Nível:</span>
+              <div class="flex items-center space-x-2">
+                <button onclick="adjustStat('nivel', -1)" class="px-1.5 bg-slate-800 text-xs text-white rounded">-</button>
+                <span class="font-bold text-red-400 font-mono text-sm" id="val-nivel">30</span>
+                <button onclick="adjustStat('nivel', 1)" class="px-1.5 bg-slate-800 text-xs text-white rounded">+</button>
+              </div>
+            </div>
+            <div class="flex justify-between border-b border-slate-800/80 pb-1.5"><span class="text-slate-400">Graduação:</span><span>Sentinela das Tecelás</span></div>
+          </div>
+        </div>
+      </div>
+
+    </div>
+  </main>
+
+  <script>
+    const state = { sorte: 8, azar: 2, divindade: 8, hpAtual: 9, hpMax: 9, silkAtual: 9, silkMax: 9, nivel: 30 };
+
+    document.addEventListener('DOMContentLoaded', () => { renderHP(); renderSilk(); });
+
+    function adjustStat(stat, amount) {
+      if (['sorte', 'azar', 'divindade'].includes(stat)) {
+        state[stat] = Math.max(0, Math.min(10, state[stat] + amount));
+        document.getElementById(`val-${stat}`).innerText = `${state[stat]} / 10`;
+      } else if (stat === 'nivel') {
+        state.nivel = Math.max(1, state.nivel + amount);
+        document.getElementById('val-nivel').innerText = state.nivel;
+      }
+    }
+
+    function renderHP() {
+      const container = document.getElementById('hp-container');
+      container.innerHTML = '';
+      for (let i = 1; i <= state.hpMax; i++) {
+        const mask = document.createElement('div');
+        mask.className = `hp-mask ${i > state.hpAtual ? 'broken' : ''}`;
+        mask.onclick = () => { state.hpAtual = state.hpAtual === i ? i - 1 : i; renderHP(); };
+        container.appendChild(mask);
+      }
+      document.getElementById('hp-count').innerText = `${state.hpAtual} / ${state.hpMax}`;
+    }
+
+    function renderSilk() {
+      const container = document.getElementById('silk-container');
+      container.innerHTML = '';
+      for (let i = 1; i <= state.silkMax; i++) {
+        const spool = document.createElement('div');
+        spool.className = `silk-spool ${i > state.silkAtual ? 'empty' : ''}`;
+        spool.onclick = () => { state.silkAtual = state.silkAtual === i ? i - 1 : i; renderSilk(); };
+        container.appendChild(spool);
+      }
+      document.getElementById('silk-count').innerText = `${state.silkAtual * 11} / 99`;
+    }
+  </script>
+
+  <footer class="w-full bg-slate-950/90 border-t border-slate-800/80 py-6 px-4 text-center mt-auto">
+    <div class="container mx-auto space-y-1">
+      <p class="text-xs md:text-sm text-slate-300 font-medium">
+        Ficha de Herói · Projeto prático, Parte 1 (HTML e CSS)
+      </p>
+      <p class="text-xs text-slate-500 font-serif tracking-wide">
+        Personagem inspirado em Hollow Knight: Silksong, de Team Cherry.
+      </p>
+    </div>
+  </footer>
+</body>
+</html>

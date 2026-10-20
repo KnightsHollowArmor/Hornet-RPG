@@ -1,0 +1,170 @@
+:root {
+  --color-bg-dark: #080a0f;
+  --color-bg-card: rgba(15, 20, 28, 0.88);
+  --color-border-silver: #8b9bb4;
+  --color-silk-red: #d92638;
+  --color-silk-light: #ff4d5e;
+  --color-gold-pharloom: #dfb256;
+  --font-title: 'Cinzel Decorative', 'Cinzel', serif;
+  --font-header: 'Cinzel', serif;
+  --font-body: 'Inter', sans-serif;
+}
+
+body {
+  background-color: var(--color-bg-dark);
+  background-image: 
+    radial-gradient(circle at 50% 20%, rgba(217, 38, 56, 0.15) 0%, transparent 50%),
+    linear-gradient(to bottom, rgba(5, 7, 10, 0.85), rgba(8, 10, 15, 0.98));
+  color: #e2e8f0;
+  font-family: var(--font-body);
+  min-height: 100vh;
+  margin: 0;
+  padding: 0;
+  display: flex;
+  flex-direction: column;
+}
+
+/* Moldura e Quadros do Jogo */
+.hk-frame {
+  position: relative;
+  background: var(--color-bg-card);
+  border: 1px solid rgba(139, 155, 180, 0.3);
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.7), inset 0 0 15px rgba(255, 255, 255, 0.02);
+  backdrop-filter: blur(8px);
+  border-radius: 4px;
+  margin-bottom: 1.5rem;
+  padding: 1rem;
+}
+
+.hk-frame-header {
+  font-family: var(--font-header);
+  background: linear-gradient(90deg, rgba(217, 38, 56, 0.2) 0%, rgba(15, 20, 28, 0.8) 50%, rgba(217, 38, 56, 0.2) 100%);
+  border-bottom: 1px solid rgba(139, 155, 180, 0.3);
+  padding: 0.5rem 1rem;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  letter-spacing: 0.1em;
+  text-transform: uppercase;
+  font-weight: 700;
+  margin-bottom: 1rem;
+}
+
+.title-gothic {
+  font-family: var(--font-title);
+  text-shadow: 0 0 12px rgba(217, 38, 56, 0.6), 0 0 2px #fff;
+}
+
+/* Navegação e Botões */
+.nav-btn {
+  font-family: var(--font-header);
+  transition: all 0.25s ease;
+  display: inline-flex;
+  align-items: center;
+  gap: 0.5rem;
+  padding: 0.5rem 1rem;
+  border-radius: 4px;
+  border: 1px solid #334155;
+  background: rgba(15, 23, 42, 0.8);
+  color: #cbd5e1;
+  text-decoration: none;
+  font-size: 0.875rem;
+}
+
+.nav-btn:hover, .nav-btn.active {
+  background: linear-gradient(180deg, rgba(217, 38, 56, 0.4) 0%, rgba(120, 15, 25, 0.6) 100%);
+  border-color: var(--color-silk-red);
+  color: #ffffff;
+  box-shadow: 0 0 15px rgba(217, 38, 56, 0.5);
+}
+
+/* Indicadores de HP e Seda */
+.hp-mask {
+  width: 28px;
+  height: 32px;
+  background: #e2e8f0;
+  clip-path: polygon(50% 0%, 100% 25%, 85% 100%, 15% 100%, 0% 25%);
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  box-shadow: 0 0 8px rgba(255, 255, 255, 0.8);
+  cursor: pointer;
+  transition: all 0.2s ease;
+}
+
+.hp-mask.broken {
+  background: #1e293b;
+  box-shadow: none;
+  opacity: 0.4;
+}
+
+.silk-spool {
+  width: 22px;
+  height: 28px;
+  background: linear-gradient(135deg, #d92638, #991b1b);
+  border: 1px solid #fecdd3;
+  border-radius: 3px;
+  box-shadow: 0 0 10px rgba(217, 38, 56, 0.7);
+  cursor: pointer;
+  transition: all 0.2s ease;
+}
+
+.silk-spool.empty {
+  background: #334155;
+  border-color: #475569;
+  box-shadow: none;
+  opacity: 0.3;
+}
+
+.item-slot {
+  width: 58px;
+  height: 58px;
+  background: rgba(15, 23, 42, 0.8);
+  border: 1px solid rgba(139, 155, 180, 0.3);
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  transition: all 0.25s ease;
+}
+
+.item-slot:hover {
+  border-color: var(--color-silk-red);
+  transform: scale(1.08);
+  box-shadow: 0 0 15px rgba(217, 38, 56, 0.4);
+}
+
+/* ESTILO DO FOOTER TEMÁTICO - PHARLOOM REIGN */
+body {
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+}
+
+footer {
+  background: linear-gradient(180deg, rgba(2, 6, 23, 0.95) 0%, rgba(15, 23, 42, 0.98) 100%);
+  border-top: 1 border-slate-800;
+  box-shadow: 0 -4px 20px rgba(0, 0, 0, 0.6);
+  position: relative;
+}
+
+footer::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 50%;
+  transform: translateX(-50%);
+  width: 120px;
+  height: 1px;
+  background: linear-gradient(90deg, transparent, #ef4444, transparent);
+}
+
+footer p:first-child {
+  letter-spacing: 0.05em;
+  color: #e2e8f0;
+}
+
+footer p:last-child {
+  color: #94a3b8;
+  font-style: italic;
+}

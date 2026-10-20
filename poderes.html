@@ -1,0 +1,183 @@
+<!DOCTYPE html>
+<html lang="pt-PT">
+<head>
+  <meta charset="UTF-8">
+  <title>Poderes - Hornet | Silksong RPG</title>
+  <link href="https://fonts.googleapis.com/css2?family=Cinzel:wght@400;600;700&family=Inter:wght@400;600&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+  <script src="https://cdn.tailwindcss.com"></script>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body class="flex flex-col min-h-screen text-slate-200">
+  <header class="w-full bg-slate-950/90 border-b border-slate-800 px-4 py-2 flex justify-between items-center">
+    <span class="font-bold text-slate-100 text-sm">PHARLOOM REIGN</span>
+    <nav class="flex space-x-2 text-xs">
+      <a href="sobre.html" class="px-3 py-1.5 bg-slate-900 border border-slate-700 rounded text-slate-300">Sobre</a>
+      <a href="saibamais.html" class="px-3 py-1.5 bg-slate-900 border border-slate-700 rounded text-slate-300">Saiba Mais</a>
+      <a href="contatos.html" class="px-3 py-1.5 bg-slate-900 border border-slate-700 rounded text-slate-300">Contatos</a>
+    </nav>
+  </header>
+
+  <div class="container mx-auto px-4 pt-6 pb-12">
+    <div class="flex flex-wrap justify-center gap-2 mb-6">
+      <a href="index.html" class="nav-btn"><i class="fa-solid fa-user-shield"></i><span>Perfil</span></a>
+      <a href="habilidades.html" class="nav-btn"><i class="fa-solid fa-bolt"></i><span>Habilidades</span></a>
+      <a href="pericias.html" class="nav-btn"><i class="fa-solid fa-bullseye"></i><span>Perícias</span></a>
+      <a href="conhecimentos.html" class="nav-btn"><i class="fa-solid fa-scroll"></i><span>Conhecimentos</span></a>
+      <a href="poderes.html" class="nav-btn active"><i class="fa-solid fa-wand-magic-sparkles"></i><span>Poderes</span></a>
+      <a href="equipamentos.html" class="nav-btn"><i class="fa-solid fa-shield-halved"></i><span>Equipamentos</span></a>
+      <a href="map.html" class="nav-btn"><i class="fa-solid fa-map-location-dot"></i><span>Mapa</span><span></a>
+    </div>
+
+    <div class="grid grid-cols-1 md:grid-cols-2 gap-6">
+      
+      <!-- PODERES PASSIVOS -->
+      <div class="hk-frame p-4">
+        <div class="hk-frame-header mb-4">
+          <span>PODERES PASSIVOS</span>
+          <i class="fa-solid fa-shield-cat text-blue-400"></i>
+        </div>
+        <div class="space-y-2.5 text-xs md:text-sm">
+          
+          <div class="p-2.5 bg-slate-900/80 rounded border border-slate-800 flex items-center space-x-3">
+            <i class="fa-solid fa-rotate-left text-red-400 text-base w-5 text-center"></i>
+            <div>
+              <strong class="block text-slate-100">Agulha de Retorno</strong>
+              <span class="text-[11px] text-slate-400">A agulha arremessada retorna automaticamente cortando inimigos no trajeto.</span>
+            </div>
+          </div>
+
+          <div class="p-2.5 bg-slate-900/80 rounded border border-slate-800 flex items-center space-x-3">
+            <i class="fa-solid fa-scroll text-rose-400 text-base w-5 text-center"></i>
+            <div>
+              <strong class="block text-slate-100">Carga de Seda</strong>
+              <span class="text-[11px] text-slate-400">Acelera o tempo de tecer fios para recuperar vitalidade.</span>
+            </div>
+          </div>
+
+          <div class="p-2.5 bg-slate-900/80 rounded border border-slate-800 flex items-center space-x-3">
+            <i class="fa-solid fa-bolt text-amber-300 text-base w-5 text-center"></i>
+            <div>
+              <strong class="block text-slate-100">Esquiva Ágil</strong>
+              <span class="text-[11px] text-slate-400">Aumenta invulnerabilidade durante o dash acrobático.</span>
+            </div>
+          </div>
+
+          <div class="p-2.5 bg-slate-900/80 rounded border border-slate-800 flex items-center space-x-3">
+            <i class="fa-solid fa-heart-pulse text-emerald-400 text-base w-5 text-center"></i>
+            <div>
+              <strong class="block text-slate-100">Resistência por Alma</strong>
+              <span class="text-[11px] text-slate-400">Reduz o dano recebido ao acumular seda suficiente.</span>
+            </div>
+          </div>
+
+          <div class="p-2.5 bg-slate-900/80 rounded border border-slate-800 flex items-center space-x-3">
+            <i class="fa-solid fa-crosshairs text-red-400 text-base w-5 text-center"></i>
+            <div>
+              <strong class="block text-slate-100">Instinto de Combate & Alta Mobilidade</strong>
+              <span class="text-[11px] text-slate-400">Permite saltos em paredes e reflexos aprimorados.</span>
+            </div>
+          </div>
+
+          <div class="p-2.5 bg-slate-900/80 rounded border border-slate-800 flex items-center space-x-3">
+            <i class="fa-solid fa-wand-magic-sparkles text-purple-400 text-base w-5 text-center"></i>
+            <div>
+              <strong class="block text-slate-100">Percepção de Espírito & Vontade Inabalável</strong>
+              <span class="text-[11px] text-slate-400">Permite ver fragmentos de alma e imunidade a atordoamentos curtos.</span>
+            </div>
+          </div>
+
+        </div>
+      </div>
+
+      <!-- PODERES ATIVOS & HABILIDADES -->
+      <div class="hk-frame p-4">
+        <div class="hk-frame-header mb-4">
+          <span>PODERES ATIVOS & HABILIDADES</span>
+          <i class="fa-solid fa-fire text-red-500"></i>
+        </div>
+        <div class="grid grid-cols-1 sm:grid-cols-2 gap-2 text-xs">
+          
+          <div class="p-2.5 bg-slate-900/80 rounded border border-slate-800 flex items-center space-x-2">
+            <i class="fa-solid fa-play text-red-400"></i>
+            <span>Golpe Silvante</span>
+          </div>
+
+          <div class="p-2.5 bg-slate-900/80 rounded border border-slate-800 flex items-center space-x-2">
+            <i class="fa-solid fa-cloud-showers-heavy text-rose-400"></i>
+            <span>Chuva de Agulhas</span>
+          </div>
+
+          <div class="p-2.5 bg-slate-900/80 rounded border border-slate-800 flex items-center space-x-2">
+            <i class="fa-solid fa-spider text-amber-400"></i>
+            <span>Armadilha de Teia</span>
+          </div>
+
+          <div class="p-2.5 bg-slate-900/80 rounded border border-slate-800 flex items-center space-x-2">
+            <i class="fa-solid fa-arrow-down text-blue-400"></i>
+            <span>Corte para Baixo / Carregado</span>
+          </div>
+
+          <div class="p-2.5 bg-slate-900/80 rounded border border-slate-800 flex items-center space-x-2">
+            <i class="fa-solid fa-ghost text-purple-400"></i>
+            <span>Espírito Vingativo</span>
+          </div>
+
+          <div class="p-2.5 bg-slate-900/80 rounded border border-slate-800 flex items-center space-x-2">
+            <i class="fa-solid fa-moon text-indigo-400"></i>
+            <span>Alma Sombria</span>
+          </div>
+
+          <div class="p-2.5 bg-slate-900/80 rounded border border-slate-800 flex items-center space-x-2">
+            <i class="fa-solid fa-volcano text-orange-400"></i>
+            <span>Desolação Descendente</span>
+          </div>
+
+          <div class="p-2.5 bg-slate-900/80 rounded border border-slate-800 flex items-center space-x-2">
+            <i class="fa-solid fa-crow text-amber-300"></i>
+            <span>Uivo das Monarcas</span>
+          </div>
+
+          <div class="p-2.5 bg-slate-900/80 rounded border border-slate-800 flex items-center space-x-2">
+            <i class="fa-solid fa-feather text-emerald-400"></i>
+            <span>Asas de Monarca</span>
+          </div>
+
+          <div class="p-2.5 bg-slate-900/80 rounded border border-slate-800 flex items-center space-x-2">
+            <i class="fa-solid fa-vest text-slate-300"></i>
+            <span>Manto Sombrio</span>
+          </div>
+
+          <div class="p-2.5 bg-slate-900/80 rounded border border-slate-800 flex items-center space-x-2">
+            <i class="fa-solid fa-gem text-cyan-300"></i>
+            <span>Coração do Cristal</span>
+          </div>
+
+          <div class="p-2.5 bg-slate-900/80 rounded border border-slate-800 flex items-center space-x-2">
+            <i class="fa-solid fa-wand-magic text-teal-300"></i>
+            <span>Ferrão / Portal dos Sonhos</span>
+          </div>
+
+          <div class="p-2.5 bg-slate-900/80 rounded border border-slate-800 flex items-center space-x-2 col-span-1 sm:col-span-2">
+            <i class="fa-solid fa-circle text-slate-500"></i>
+            <span>Forma de Vazio (Transformação Suprema)</span>
+          </div>
+
+        </div>
+      </div>
+
+    </div>
+  </div>
+
+  <footer class="w-full bg-slate-950/90 border-t border-slate-800/80 py-6 px-4 text-center mt-auto">
+    <div class="container mx-auto space-y-1">
+      <p class="text-xs md:text-sm text-slate-300 font-medium">
+        Ficha de Herói · Projeto prático, Parte 1 (HTML e CSS)
+      </p>
+      <p class="text-xs text-slate-500 font-serif tracking-wide">
+        Personagem inspirado em Hollow Knight: Silksong, de Team Cherry.
+      </p>
+    </div>
+  </footer>
+</body>
+</html>
